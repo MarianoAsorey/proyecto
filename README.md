@@ -26,7 +26,7 @@ El proyecto normaliza y enriquece los datos, calculando indicadores relevantes p
 - `actividades_establecimientos.csv`  
 - `codigo_departamento_provincia.csv`
 
-> Todos en codificación UTF-8.
+> Todos en codificación UTF-8. Para mayor detalle de los datasets utilizados, dirigase a la carpeta Data.
 
 ## Dependencias en R
 
