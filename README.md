@@ -66,5 +66,28 @@ Te invitamos a que veas el **PDF del informe** que armamos, donde seguimos una m
 
 Los gráficos y tablas se encuentran en la carpeta outputs/ y el detalle completo en el PDF
 
+## ✨ Nuevas variables creadas en el proceso de análisis
+
+Durante la fase de procesamiento y enriquecimiento de los datos, se generaron una serie de variables derivadas que permiten analizar la estructura productiva, la concentración económica y la equidad de género desde múltiples dimensiones.  
+Estas variables no existen en los datasets originales y fueron creadas íntegramente en R.
+
+### 📊 Variables derivadas
+
+| **Variable** | **Descripción** | **Cálculo / Procedencia** |
+|--------------|------------------|-----------------------------|
+| **empleo_total** | Total de empleo registrado por provincia o departamento. | Suma de `empleo`. |
+| **prop_mujeres** | Proporción promedio de mujeres empleadas. | Promedio de `proporcion_mujeres`. |
+| **brecha_genero** | Medición respecto de la paridad (0.5). Valores negativos indican menor participación femenina. | `prop_mujeres - 0.5`. |
+| **n_sectores** | Diversificación económica según cantidad de sectores (CLAE2). | `n_distinct(clae2)`. |
+| **HHI** | Índice Herfindahl–Hirschman, que mide concentración sectorial del empleo. | Suma de participaciones sectoriales al cuadrado. |
+| **sector_agregado** | Clasificación de actividades CLAE en grandes agrupamientos productivos. | Definido vía `case_when()`. |
+| **n_est** | Número total de establecimientos productivos en la provincia. | Conteo de registros en `establecimientos`. |
+| **porcentaje** | Participación regional sobre el total nacional de establecimientos. | `(total_region / total_nacional) * 100`. |
+| **variacion_pct** | Variación porcentual del empleo entre 2021 y 2022 por gran sector. | `(empleo_2022 - empleo_2021) / empleo_2021 * 100`. |
+| **prop_exportadoras** | Proporción de empresas exportadoras sobre el total. | `empresas_exportadoras / empresas_totales`. |
+| **cuadrante** | Tipología productiva según diversificación (HHI) y perfil exportador. | Clasificación por mediana de HHI y exportaciones. |
+
+Estas variables permiten construir los mapas, correlogramas, treemaps, comparativos interanuales y el modelo en estrella exportado a Power BI.
+
 ## Autores
 Mariano Asorey & Victoria Michel – Universidad de Buenos Aires
