@@ -62,7 +62,8 @@ Los datos provienen de fuentes oficiales del Ministerio de Economía.
 ## Informe completo 
 Te invitamos a que veas el **PDF del informe** que armamos, donde seguimos una metodología de *storytelling* para que puedas interiorizarte un poco más sobre el proyecto.
 
-[📄 Ver informe en PDF](An%C3%A1lisis%20sectorial%20y%20territorial%20del%20empleo%20productivo%20en%20Argentina%20(2021%20-%202022).pdf)
+📄 [Ver informe en PDF](docs/Análisis%20sectorial%20y%20territorial%20del%20empleo%20productivo%20en%20Argentina%20(2021%20-%202022).pdf)
+
 
 Los gráficos y tablas se encuentran en la carpeta outputs/ y el detalle completo en el PDF
 
