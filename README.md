@@ -65,7 +65,7 @@ Los gráficos y tablas se encuentran en la carpeta outputs/ y el detalle complet
 
 ## 📊 Nuevas variables creadas en el proceso de análisis
 
-Durante la fase de procesamiento y enriquecimiento de los datos, se generaron una serie de variables derivadas que permiten analizar la estructura productiva, la concentración económica y la equidad de género desde múltiples dimensiones.  
+Durante la fase de procesamiento de los datos, se generaron una serie de variables derivadas que permiten analizar la estructura productiva, la concentración económica y la equidad de género.
 Estas variables no existen en los datasets originales y fueron creadas íntegramente en R.
 
 ### Variables derivadas
